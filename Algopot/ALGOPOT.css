@@ -23,6 +23,29 @@ nav ul{
     width: 100%;
     margin: 0;
     background-color: #0D0E12;
+    display: flex;
+}
+.navlist{
+    display: flex;
+    
+}
+.navitem a{
+color: white;
+}
+li a{
+    text-decoration: none;
+    font-family: 'poppins';
+    padding:  0 35px;
+    color: #45AC75;
+}
+#svg
+{
+    margin-right: auto;
+}
+
+
+.menu{
+    display: none;
 }
 .algogrid{
     text-align: center;
@@ -166,6 +189,132 @@ left: 10px;
     border-left: none;
     padding: 6px 10px 6px 10px ;
 }
+.pagination{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-family: 'poppins';
+    
+}
+.pagination a{
+    color: var(--text-color);
+    text-decoration: none;
+    border: 1.21px solid #E5E5E5;
+   padding: 10px 14px;
+   border-radius: 4px;
+   margin: 5px;
+   min-width: 30px;
+}
+
+.pagination a:focus{
+    background: #45AC7580;
+    color: white;
+}
+.pageelip a{
+    border: none;
+}
+.dttext{
+    color: white;
+    font-family: "poppins";
+    background-color:  #222B3E;
+    margin: 32px auto 10px auto;
+    padding: 19px;
+    border-radius: 11px;
+    margin-bottom: 10px;
+    max-width:  600px;
+    text-align: center;
+    
+}
+.prefooter{
+    background: #45AC75;
+    max-width: 100%;
+    margin: 40px 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.prefooter p{
+    font-family: 'poppins';
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.prefooter img{
+    width: auto;
+    margin-top: 30px;
+    
+}
+.prefooter .txt{
+    font-family: 'poppins';
+font-size: 17px;
+font-style: normal;
+font-weight: 500;
+line-height: 40px;
+letter-spacing: 0em;
+text-align: center;
+padding: 0 200px;
+color: white;
+margin-bottom: 10px;
+
+}
+.prefooter button{
+    margin: 0 30px;
+    background: #111621;
+    color: white;
+    font-family: 'poppins';
+    border: 2px solid #111621;
+    padding: 6px 40px ;
+    border-radius: 4px;
+   margin-left: 10px;
+    font-size: 16px;
+}
+.button{
+        background: var(--text-color);
+        color: white;
+        font-family: 'poppins';
+        border: 1px solid var(--text-color);
+        padding: 6px 30px ;
+        border-radius: 10px;
+       margin-left: 10px;
+        font-size: 16px;
+        margin-top: 20px;
+}
+footer{
+    margin-top: 35rem;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+    font-family: 'poppins';
+    column-gap: 30px;
+    row-gap: 60px;
+}
+footer li{
+    list-style-type: none;
+}
+footer h1{
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--text-color);        
+}
+footer  img{
+    padding: 5px;
+}
 @media all and (min-width:500px){
     body{
         margin: 6rem 1.5rem;
@@ -258,8 +407,7 @@ left: 10px;
        
     }
     .algotext{
-        font-family: Poppins;
-        font-family: Poppins;
+        font-family: 'Poppins';
         font-size: 50px;
         padding: 0 40px 0 90px;
         font-weight: 700;
@@ -316,4 +464,106 @@ left: 10px;
     nav li:first-child{
         margin-left: 80px;
     }
+    .dttext{
+        width: auto;
+    }
+  
+
+ 
+}
+@media all  and (max-width:800px){
+    .navlist  {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        color: white;
+        font-size: 20px;
+        background-color: #0D0E12;
+        text-align: center;
+        top: 3.5rem;
+        margin:  0;
+        opacity: 0;
+        left: 0;
+        border-top: 2px solid var(--text-color);
+        padding: 1rem 0;
+        transition: opacity 0.25s ease-in;
+        pointer-events: none;
+        
+    }
+    .navlist li{
+        margin: 5px 0;
+    }
+    .navlist.active{
+        opacity: 1;
+        pointer-events: all;
+      
+    }
+  .navlist.active.menu{
+      opacity: 1;
+  }
+  
+  
+    .navlist li:hover{
+        background-color: #3A404d;
+        margin: 5px 8px;
+        border-radius: 6px;
+    }
+    .navitem{
+        margin: 0;
+        
+    }
+    .menu {
+        position: absolute;
+        display: block;
+        right: 1rem;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 100;
+    }
+    .prefooter .txt{
+        font-family: 'poppins';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 0 30px;
+    color: white;
+    margin-bottom: 10px;
+    
+    }
+    footer{
+        margin-top: 38rem;
+        position: relative;
+        bottom: 0;
+        display: flex;
+        justify-content: flex-start;
+        text-align: left;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-left: -3rem;
+    }
+    .algoicon{
+        
+        width: 60%;
+
+    }
+    .algoicon img{
+        width: 12rem
+    }
+    .algogrid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .algobutton{
+        margin-right: 20px;
+    }
+    .algono{
+        margin: 0 20px;
+    }
+
 }
