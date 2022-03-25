@@ -9,18 +9,24 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="ALGOPOT.css">
-   
 </head>
 <body>
     <div class="wrapper">
         <nav>
                 <ul>
-                    <li><img src="ALGOPOT.svg"></li>
+                    <li id="svg"><img src="ALGOPOT.svg"></li>
+                    <div class="navlist">
+                    <li  class="navitem"><a href="#">List Your Token</a></li>
+                    <li class="navitem"><a href="#">Watchlist</a></li>
+                    <li><a href="#">Sign-up</a></li>
+                    <li><a href="#">Login</a></li>
+                    </div>
+                    <button class="menu" onclick="xx()"><li ><img src="eva_menu-fill.svg"></li></button>
                 </ul>
         </nav>
         <section>
     <div class="algogrid">
-            <div class="algoicon"><img src="erologo.svg"></div>
+            <div class="algoicon"><img src="Group 159 (1).png"></div>
 
             <div class="algotext"><p>Creating An Efficient Algorand Listing System</p></div>
 
@@ -68,7 +74,7 @@
                             
                  </div>
                  <div class="rowd"><span  class="active"><img src="Subtract.svg">Active</span><span><button class="vote">Vote</button><span id="voteno">125</span></span></div>
-        
+                
             </div>
             <!--3-->
             <div class="subcontainer">
@@ -142,8 +148,67 @@
                  <div class="rowd"><span  class="active"><img src="Subtract.svg">Active</span><span><button class="vote">Vote</button><span id="voteno">125</span></span></div>
         
             </div>
+            <div class="pagination">
+             <div> <a class="pageone" href="#">1 </a></div>
+             <div> <a class="pagetwo" href="#">2</a></div>
+             <div  class="pagethree"> <a href="#">3</a></div>
+             <div class="pageelip">...</div>
+             <div> <a class="pagefour" href="#">10</a></div>
+            </div>
+            <div class="dttext ">
+                <p>
+                    Can't find your Token?
+                </p>
+                <div> List your token now!
+                    Get your community to vote for your coin and gain exposure.</div>
+                    <button class="button"> Submit Token</button>
+            </div>
+            <div class="prefooter">
+                <div><img src="Asset 1 1.svg"  ></div>
+                <p>Find your next investment in Algorand Tokens</p>
+                <div class="txt">Create an Account and Sign up to our industry news and Token launch list
+                    and get your next investment opportunity direct to your inbox on a weekly basis.</div>
+                    <button> Register Now</button>
+            </div>          
         </section>
+        <footer>
+            <div  class="fclass">
+               
+                <ul>
+                    <li> <h1>Useful links</h1></li>
+                    <li>Delisting Policy</li>
+                    <li>About Us</li>
+                    <li>Privacy Policy</li>
+                    <li>Whitepaper</li>
+                </ul>
+            </div>
+            <div class="fclass">
+                
+                <ul>
+                    <li><h1>Token Lists</h1></li>
+                    <li>Active Tokens</li>
+                    <li>Upcoming Tokens</li>
+                    <li>Trending Tokens</li>
+                </ul>
+            </div >
+            <div class="fclass">
+              
+                <ul>
+                    <li> <h1>Resources</h1></li>
+                    <li>Help & Support</li>
+                    <li>Submit Token</li>
+                    
+                </ul>
+            </div>
+            <div class="fclass">
+                <ul>
+                <h1>Socials</h1>
+               <li><span><img src="telegram.svg"></span><span><img src="twitter.svg"></span></li>
+            </ul>
+            </div>
+        </footer>
 </div>
-   
+<script src="ALGOPOT.js" ></script>
 </body>
+
 </html>
